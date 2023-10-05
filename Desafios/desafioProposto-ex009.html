@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            background-color: darkgray;
+        }
+
+        input#nacionalidade{
+            width: 200px;
+            height: 2em;
+            border-radius: 5px;
+            border: transparent;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        input#btnVerificar{
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 10px;
+            border: transparent;
+            cursor: pointer;
+        }
+
+        div{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Qual a sua nacionalidade?</h1>
+    <form action="">
+        <input type="text" name="nacionalidade" id="nacionalidade" placeholder="Digite seu país">
+        <input type="button" value="Verificar" id="btnVerificar" onclick="qualNacionalidade()">
+
+        <div id="resultado">
+
+        </div>
+    </form>
+
+    <script>
+        function qualNacionalidade(){
+            let nac = document.querySelector('input#nacionalidade')
+            let res = document.getElementById('resultado')
+
+            if(nac.value == 'Brasil'){
+                res.innerHTML = '<p>Você é <strong>BRASILEIRO</strong>!</p>'
+            }else{
+                res.innerHTML = '<p>Você é <strong>ESTRANGEIRO</strong>!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
