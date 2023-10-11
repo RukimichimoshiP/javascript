@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(70, 142, 236);
+}
+
+header {
+    color: white;
+    margin-top: 20px;
+    padding: 25px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 500px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+div#res{
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+select#numeros{
+    width: 200px;
+}
+
+div#mostrarRes{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+div#mostrarRes p {
+    margin-bottom: 10px;
+}
+
+footer {
+    color: white;
+    font-style: italic;
+    margin-top: 10px;
+}
